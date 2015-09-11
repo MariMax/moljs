@@ -1,0 +1,47 @@
+<html>
+<body>
+
+<div>
+    <svg id="molecule" style="width: 640px; height: 480px;"></svg>
+</div>
+
+<script src="jquery-2.1.3.js"></script>
+<script src="require.js"></script>
+
+<script>
+
+require.config({
+    packages: [
+        { 
+            name: 'moljs',
+            location: 'lib'
+        }
+    ]
+});
+
+require([
+
+    'moljs'
+
+], function(moljs) {
+
+    var molecule = new moljs.Molecule({
+        element: document.getElementById('molecule')
+    });
+
+    $.get('molfile.txt', function(molfile) {
+
+        molecule.setMolfile(molfile);
+
+    }, 'text');
+
+});
+
+
+</script>
+
+</body>
+</html>
+
+
+
