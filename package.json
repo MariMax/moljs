@@ -1,0 +1,29 @@
+{
+  "name": "moljs",
+  "version": "1.0.0",
+  "description": "Molfile parser/visualizer in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/udp/moljs.git"
+  },
+  "keywords": [
+    "molfile",
+    "molecule",
+    "chemistry",
+    "biology",
+    "bioinformatics",
+    "biojs",
+    "visualization",
+    "parser"
+  ],
+  "author": "James Alastair McLaughlin",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/udp/moljs/issues"
+  },
+  "homepage": "https://github.com/udp/moljs#readme"
+}
